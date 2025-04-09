@@ -1,0 +1,8 @@
+services:
+  stock_service:
+    build:
+      context: ./inventario-inteligente/backend/stock_service
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./inventario-inteligente/backend/stock_service:/app
